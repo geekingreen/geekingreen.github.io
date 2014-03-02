@@ -1,0 +1,12 @@
+---
+layout: default
+title: Home 
+---
+<div class="ui piled segment">
+  <h1 class="ui header">Blog Posts</h1>
+	<ul class="ui link list">
+		{% for post in site.posts %}
+			<li class="item"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
