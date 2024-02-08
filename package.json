@@ -1,0 +1,22 @@
+{
+  "name": "geekingreen.github.io",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@agney/babel-plugin-goober-css-prop": "^0.0.1",
+    "goober": "^2.1.14",
+    "preact": "^10.19.3",
+    "preact-router": "^4.1.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.7.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}
