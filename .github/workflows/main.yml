@@ -24,16 +24,16 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: Node.js
-        uses: actions/setup-node@v4
+      - name: bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
-          cache: 'npm'
-          cache-dependency-path: 'yarn.lock'
+          bun-version: latest
+          cache: 'bun'
+          cache-dependency-path: 'bun.lock'
       - name: install deps
-        run: npm i -g yarn && yarn
+        run: bun i
       - name: build
-        run: yarn build
+        run: bun run build
       - name: configure pages
         uses: actions/configure-pages@v4
       - name: upload build
