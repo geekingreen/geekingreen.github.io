@@ -28,8 +28,6 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-          cache: 'bun'
-          cache-dependency-path: 'bun.lock'
       - name: install deps
         run: bun i
       - name: build
